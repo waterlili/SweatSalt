@@ -22,31 +22,31 @@ Master Configuration
 Find and replace master IP (uncomment it)
 interface: 192.168.0.161
 
->Start and enable the salt-master service:
-# systemctl start salt-master.service
-# systemctl enable salt-master.service
+##Start and enable the salt-master service:
+* systemctl start salt-master.service
+* systemctl enable salt-master.service
 
 # Minion installation
 
-# yum update
-# yum install https://repo.saltstack.com/yum/redhat/salt-repo-latest-2.el7.noarch.rpm
-# yum clean expire-cache
-# yum install salt-minion -y
+* yum update
+* yum install https://repo.saltstack.com/yum/redhat/salt-repo-latest-2.el7.noarch.rpm
+* yum clean expire-cache
+* yum install salt-minion -y
 
 >After the installation finishes,modify configuration
 
-# vim /etc/salt/minion
+>vim /etc/salt/minion
 Find and replace master IP (uncomment it)
 master: 192.168.0.161
 
 >mention your minion name on minion_id for easy idendification
 
-# systemctl start salt-minion.service
-# systemctl enable salt-minion.service
+* systemctl start salt-minion.service
+* systemctl enable salt-minion.service
 
 # Accept the Minions
 ---
-# salt-key -L				
+ salt-key -L				
 ---
 # salt-key --accept=fox1
 ---
