@@ -18,11 +18,11 @@ Master Configuration
 * yum install salt-master -y
 
 >After the installation finishes,modify configuration
-# vim /etc/salt/master
+>vim /etc/salt/master
 Find and replace master IP (uncomment it)
 interface: 192.168.0.161
 
-##Start and enable the salt-master service:
+>Start and enable the salt-master service:
 * systemctl start salt-master.service
 * systemctl enable salt-master.service
 
