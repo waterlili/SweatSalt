@@ -46,10 +46,6 @@ master: 192.168.0.161
 
 # Accept the Minions
 ---
-> salt-key -L				
----
-> salt-key --accept=fox1
----
 > salt-key -A</br>
 this will accept all minions
 ---
