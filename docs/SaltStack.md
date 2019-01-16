@@ -50,13 +50,13 @@ master: 192.168.0.161
 ---
 > salt-key --accept=fox1
 ---
-> salt-key -A
+> salt-key -A</br>
 this will accept all minions
 ---
-> salt-key _D
+> salt-key _D</br>
 this will delete all minions
 ---
-> salt '*' test.ping	
+> salt '*' test.ping</br>	
 It will get ping of all server which act as minion
 										
 Minion Configuration
