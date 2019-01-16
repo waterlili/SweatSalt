@@ -55,7 +55,7 @@ this will delete all minions
 > salt '*' test.ping</br>	
 It will get ping of all server which act as minion
 ---
-> salt-key -L</br>				
+> salt-key -M</br>				
 ---
 > salt-key --accept=fox1										
 Minion Configuration
