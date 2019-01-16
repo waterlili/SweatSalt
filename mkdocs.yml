@@ -3,7 +3,7 @@ site_url: https://www.mkdocs.org
 site_description: Project documentation with Markdown.
 site_author: Entekhab
 
-repo_url: https://github.com/waterlili/saltstack_formulas
+repo_url: https://github.com/waterlili/SweatSalt.git
 edit_uri: ""
 
 theme:
