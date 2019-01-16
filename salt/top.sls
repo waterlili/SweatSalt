@@ -10,8 +10,7 @@ base:
     - mysql.remote
     - zabbix.agent.repo
     - zabbix.agent.conf
-   
-     
+
   'slave0':
     - apache
     - apache.config
@@ -24,11 +23,11 @@ base:
   'slave3':
     - apache
     - apache.config
-    - apache.vhosts.standard
-  
+    - apache.vhosts.standard 
+
   'slave2':
-    - php
-  
+    - php  
+
   'slave4':
     - nginx
     - nginx.Sblock
