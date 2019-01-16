@@ -1,0 +1,7 @@
+we should install mariadb client on a seprate server
+salt th3 state.sls mysql.remote
+For granting we should use this command
+salt minion_database state.sls mysql.remote.grant pillar='{"rmt": "minion_apache"}'
+for granting by using top file:
+salt minion_database state.sls mysql.remote.grant pillar='{"rmt": ["minion_php","minion_apache"]}'
+

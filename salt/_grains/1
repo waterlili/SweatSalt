@@ -1,0 +1,8 @@
+from os import system
+def Has():
+	php = system('php --version')
+
+	if php != 0:
+    		print 'Missing: PHP'
+        else: 
+                print php

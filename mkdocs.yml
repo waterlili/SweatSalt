@@ -1,0 +1,15 @@
+site_name: Salt
+site_url: https://www.mkdocs.org
+site_description: Project documentation with Markdown.
+site_author: Entekhab
+
+repo_url: https://github.com/waterlili/saltstack_formulas
+edit_uri: ""
+
+theme:
+    name: readthedocs
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - django
+        - python

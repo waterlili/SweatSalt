@@ -1,0 +1,18 @@
+{% set mysql_root_pass = salt['pillar.get']('mysql:server:root_password',salt['grains.get']('server_id')) %}
+{% set host = salt['mine.get'](pillar['remote'], 'network.ip_addrs') %}
+{% set settings = salt['pillar.get']('zabbix-mysql', {}) -%}
+{% set dbname = settings.get('dbname') -%}
+{% set dbuser = settings.get('dbuser') -%}
+
+update my conf:
+  file.append:
+      - name: /etc/my.cnf
+      - text: bind-address = {{ host[pillar['remote']][0] }}
+root_saltstack:
+    mysql_grants.present:
+        - grant: all privileges
+        - database: '*.*'
+        - user: root
+        - host: {{ host[pillar['remote']][0] }}
+        - connection_user: root
+        - connection_pass: '{{ mysql_root_pass }}'

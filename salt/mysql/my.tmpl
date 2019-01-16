@@ -1,0 +1,4 @@
+{% set mysql_root_pass = salt['pillar.get']('mysql:server:root_password',salt['grains.get']('server_id')) %}
+[Client]
+user=root
+password={{ mysql_root_pass }}
