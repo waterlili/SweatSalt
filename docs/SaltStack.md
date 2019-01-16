@@ -12,10 +12,10 @@ Master Configuration
 ---
 # Master installtion
 > 
-# yum update
-# yum install https://repo.saltstack.com/yum/redhat/salt-repo-latest-2.el7.noarch.rpm
-# yum clean expire-cache
-# yum install salt-master -y
+> yum update
+> yum install https://repo.saltstack.com/yum/redhat/salt-repo-latest-2.el7.noarch.rpm
+> yum clean expire-cache
+> yum install salt-master -y
 
 >After the installation finishes,modify configuration
 # vim /etc/salt/master
