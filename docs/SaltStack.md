@@ -45,18 +45,17 @@ master: 192.168.0.161
 * systemctl enable salt-minion.service
 
 # Accept the Minions
+> salt-key -L				
 ---
- salt-key -L				
+> salt-key --accept=fox1
 ---
-# salt-key --accept=fox1
----
-# salt-key -A
+> salt-key -A
 this will accept all minions
 ---
-# salt-key _D
+> salt-key _D
 this will delete all minions
 ---
-# salt '*' test.ping	
+> salt '*' test.ping	
 It will get ping of all server which act as minion
 										
 Minion Configuration
