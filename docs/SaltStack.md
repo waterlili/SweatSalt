@@ -54,9 +54,12 @@ this will delete all minions
 ---
 > salt '*' test.ping</br>	
 It will get ping of all server which act as minion
-										
-Minion Configuration
 ---
+> salt-key -L				
+---
+> salt-key --accept=fox1										
+Minion Configuration
+
 > We specifiy master ip address in /etc/salt/minion
 > If we want to connect to mysql we should
 > Add mysql section to configuration. 
