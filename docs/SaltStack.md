@@ -45,6 +45,7 @@ master: 192.168.0.161
 * systemctl enable salt-minion.service
 
 # Accept the Minions
+---
 > salt-key -L				
 ---
 > salt-key --accept=fox1
